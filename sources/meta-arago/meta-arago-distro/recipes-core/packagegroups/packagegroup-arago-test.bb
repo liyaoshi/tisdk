@@ -35,13 +35,9 @@ ARAGO_TEST = "\
     fio \
     "
 
-ARAGO_TEST_append_armv7a = " \
-    cpuburn-neon \
-"
+ARAGO_TEST_append_armv7a = ""
 
-ARAGO_TEST_append_armv7ve = " \
-    cpuburn-neon \
-"
+ARAGO_TEST_append_armv7ve = ""
 
 ARAGO_TI_TEST = " \
     ltp-ddt \
