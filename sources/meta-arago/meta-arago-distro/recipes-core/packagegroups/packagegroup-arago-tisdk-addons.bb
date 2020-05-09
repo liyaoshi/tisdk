@@ -83,7 +83,6 @@ UTILS_append_j7-evm = " ipc-lld-fw pru-icss ti-display-sharing-fw cpsw9g-eth-fw"
 UTILS_append_omapl138 = " ti-ipc-rtos-fw"
 
 UTILS_append_dra7xx = " can-utils \
-                        ${UTILS_DSP} \
                         ${@bb.utils.contains('MACHINE_FEATURES','gpu','glsdk-example-apps','',d)} \
 "
 
@@ -166,15 +165,7 @@ EXTRA_PACKAGES_append_ti43x = " voxelsdk \
                                 pdm-anomaly-detection \
 "
 
-EXTRA_PACKAGES_append_omap-a15 = " voxelsdk \
-                                   big-data-ipc-demo-linux \
-                                   big-data-ipc-demo-linux-firmware \
-                                   arm-compute-library \
-                                   ${ARMNN_PACKAGES} \
-                                   tensorflow-lite \
-                                   tensorflow-lite-demo \
-                                   pdm-anomaly-detection \
-"
+EXTRA_PACKAGES_append_omap-a15 = " "
 
 EXTRA_PACKAGES_append_am65xx = " arm-compute-library \
                              ${ARMNN_PACKAGES} \
